@@ -1,0 +1,2 @@
+# GithubRule
+Githubのコミットのルールについてのドキュメント
