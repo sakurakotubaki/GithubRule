@@ -29,3 +29,9 @@ git commit --amend -m "新しいコミットメッセージ"
 ```bash
 git rerset HEAD^
 ```
+
+新しいブランチを作成して切り替えるには、`git checkout -b [ブランチ名]`を使います。
+
+```bash
+git checkout -b [ブランチ名]
+```
