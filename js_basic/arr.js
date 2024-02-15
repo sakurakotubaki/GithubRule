@@ -5,3 +5,7 @@ item.reduce((acc, name) => {
   console.log(name);
   return acc + name;
 }, "acc");
+
+item.push("Sboy");
+console.log(item);
+// node js_basic/arr.js
