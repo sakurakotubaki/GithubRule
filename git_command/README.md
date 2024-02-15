@@ -35,3 +35,13 @@ git rerset HEAD^
 ```bash
 git checkout -b [ブランチ名]
 ```
+
+## rebaseについて
+rebaseは、他のブランチの変更を取り込むためのコマンドです。rebaseの[re(再度)base]するということ。baseというのは、そのブランチがどこからきたのかを意味する。developとfeat-1は、mainということになる。
+
+git rebaseで、developブランチとfeat-1ブランチを合流させる。
+
+このコマンドは、
+```bash
+git rebase feat-1
+```
