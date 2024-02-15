@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="itemList"></ul>
+
+  <script>
+    const items = {
+  Apple: 'Red',
+  Banana: 'Yellow',
+  Cherry: 'Red'
+};
+
+let htmlString = '';
+for (let key in items) {
+  htmlString += `<li>${key}: ${items[key]}</li>`;
+}
+
+const ulElement = document.getElementById('itemList');
+ulElement.innerHTML = htmlString;
+  </script>
+</body>
+</html>
