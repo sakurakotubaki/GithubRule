@@ -89,3 +89,24 @@ Revertを取り消すコマンド
 ```bash
 git revert HEAD --no-edit
 ```
+
+## Gitのtagについて
+Gitのtagは、リリースのバージョン番号を管理するための機能です。tagを使うことで、リリースのバージョン番号を管理することができます。
+
+tagを作成するには、`git tag`コマンドを使います。
+
+```bash
+git tag v1.0.0
+```
+
+tagを削除するには、`git tag -d`コマンドを使います。
+
+```bash
+git tag -d v1.0.0
+```
+
+tagをリモートリポジトリにプッシュするには、`git push origin`コマンドを使います。
+
+```bash
+git push origin v1.0.0
+```
