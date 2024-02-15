@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+  <button class="prev">押す</button>
+  <!-- preventDefaultのDOM -->
+    <a href="https://www.google.com" class="link">Google</a>
+  <script>
+    const prev = document.querySelector('.prev');
+    prev.addEventListener('click', () => {
+      alert('押された');
+    });
+    // preventDefaultのDOM
+    const link = document.querySelector('.link');
+    link.addEventListener('click', (e) => {
+        // preventDefaultでaタグのリンクを無効にする
+      e.preventDefault();
+      alert('リンクを押した');
+    });
+  </script>
+</body>
+</html>
