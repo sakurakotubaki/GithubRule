@@ -31,10 +31,46 @@ console.log(age); // undefined
  *letは再代入可能な変数を宣言するためのキーワードです。
  */
 
- // !をつけるとtrueとfalseを逆にする
+// !をつけるとtrueとfalseを逆にする
 let flag = true;
 if (!flag) {
   console.log("flagはtrueです");
 } else {
   console.log("flagはfalseです");
 }
+
+let arr = ["Kboy", "Jboy", "Nboy"];
+console.log('-----------[map]----------');
+arr.map((name) => {
+  console.log(name);
+});
+console.log('-----------[forEach]----------');
+arr.forEach((name) => {
+  console.log(name);
+});
+console.log('-----------[for in]----------');
+for(let i in arr) {
+  console.log(arr[i]);
+}
+console.log('-----------[for of]----------');
+for(let name of arr) {
+  console.log(name);
+}
+/*
+-----------[map]----------
+Kboy
+Jboy
+Nboy
+-----------[forEach]----------
+Kboy
+Jboy
+Nboy
+-----------[for in]----------
+Kboy
+Jboy
+Nboy
+-----------[for of]----------
+Kboy
+Jboy
+Nboy
+*/
