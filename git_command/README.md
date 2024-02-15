@@ -76,3 +76,10 @@ git commit -m "Remove linux directory from tracking"
 ```
 
 これで、linuxディレクトリはGitの追跡から除外されます。
+
+## Reset, Revert
+`git reset`は、コミットを取り消すコマンドです。`git revert`は、コミットを取り消すコマンドです。
+
+```bash
+git revert HEAD --no-edit
+```
