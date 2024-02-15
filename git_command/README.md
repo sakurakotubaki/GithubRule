@@ -27,5 +27,5 @@ git commit --amend -m "新しいコミットメッセージ"
 
 ひとつ前のコミットを`^`で戻す。
 ```bash
-git 
+git rerset HEAD^
 ```
