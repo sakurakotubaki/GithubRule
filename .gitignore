@@ -1,0 +1,4 @@
+# OSのコミットを対象外にする
+linux/
+macos/
+windows/
