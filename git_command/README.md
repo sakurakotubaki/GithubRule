@@ -45,3 +45,14 @@ git rebaseで、developブランチとfeat-1ブランチを合流させる。
 ```bash
 git rebase feat-1
 ```
+
+git rebaseしたら、pushするには、`--force`オプションをつける必要がある。
+
+```bash
+git push origin feat-1 --force
+```
+
+リベースを戻す
+```bash
+git reflog
+```
