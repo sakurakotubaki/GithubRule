@@ -80,6 +80,12 @@ git commit -m "Remove linux directory from tracking"
 ## Reset, Revert
 `git reset`は、コミットを取り消すコマンドです。`git revert`は、コミットを取り消すコマンドです。
 
+最後のコミットを取り消すコマンド
+```bash
+git revert HEAD --no-edit
+```
+
+Revertを取り消すコマンド
 ```bash
 git revert HEAD --no-edit
 ```
